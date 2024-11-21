@@ -15,7 +15,7 @@ The general flow of providing a custom algorithm to a user is as follows:
 - The PDS resolves the at-uri and finds the DID doc of the Feed Generator
 - The PDS sends a `getFeedSkeleton` request to the service endpoint declared in the Feed Generator's DID doc
   - This request is authenticated by a JWT signed by the user's repo signing key
-- The Feed Generator returns a skeleton of the feed to the user's PDS
+- The Feed Generator returns a skeleton of the feed to the user's PDShttps://elegantimpose.com/xdbzgdu6?key=9ad137fbbcdcb9ab869b2bf9c1fe1e1d
 - The PDS hydrates the feed (user info, post contents, aggregates, etc.)
   - In the future, the PDS will hydrate the feed with the help of an App View, but for now, the PDS handles hydration itself
 - The PDS returns the hydrated feed to the user
@@ -28,7 +28,8 @@ We've set up this simple server with SQLite to store and query data. Feel free t
 
 Next, you will need to do two things:
 
-1. Implement indexing logic in `src/subscription.ts`. 
+1. Implement indexing logic in `src/subscrip![Protest-rally_Jubo-League-906a9cd92ac2a6294d420296a6418c3f](https://github.com/user-attachments/assets/0ae737a2-8325-4f14-ae73-2c17ef199634)
+tion.ts`. 
    
    This will subscribe to the repo subscription stream on startup, parse events and index them according to your provided logic.
 
